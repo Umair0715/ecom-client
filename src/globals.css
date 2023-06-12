@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary : #F9CF4E;
+    --primaryHover : #dfaf21 ;
+    --grayText : #9D9D9D;
+    --dark : #000000 ;
+    --pure : #fff;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+#select-box-input{
+    padding : 6px 0 !important;
+    outline : none !important; 
+}
+
+.css-t3ipsp-control{
+    border : none !important;
+}
+
+@media print {
+    .report {
+        padding : 2rem;
+    }
+    .report table {
+        border : 1px solid var(--dark);
+    }
+    .report table td , .report table th {
+        border : 1px solid gray;
+    }
+}
+
+@media (max-width: 768px){
+    .responsiveTable tbody tr td.pivoted {
+        text-align: right !important; /* Change text alignment to center */
+    }
+   .responsiveTable tbody tr {
+        border : 1px solid rgb(190, 190, 190) !important;
+        border-radius: 4px !important;
+   }
+}
